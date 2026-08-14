@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+    background:#f5f7fb;
+}
+
+
+/* Sidebar */
+
+.sidebar{
+
+    width:270px;
+    height:100vh;
+    position:fixed;
+
+    background:
+    linear-gradient(180deg,#06295c,#0b3d91);
+
+    color:white;
+    padding:25px;
+
+    transition:0.4s;
+
+}
+
+
+.logo{
+
+    text-align:center;
+    margin-bottom:30px;
+
+}
+
+
+.logo h2{
+
+    color:#d4af37;
+    font-size:24px;
+
+}
+
+
+.sidebar a{
+
+    display:flex;
+    align-items:center;
+
+    padding:14px;
+    margin:10px 0;
+
+    color:white;
+    text-decoration:none;
+
+    border-radius:12px;
+
+    transition:0.3s;
+
+}
+
+
+
+.sidebar a:hover{
+
+    background:#d4af37;
+
+    color:#06295c;
+
+    transform:translateX(8px);
+
+}
+
+
+
+/* Main */
+
+.main{
+
+    margin-left:270px;
+
+}
+
+
+/* Navbar */
+
+
+.navbar{
+
+    height:70px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+/* Cards */
+
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+
+    transition:0.4s;
+
+}
+
+
+
+.card:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+
+
+.card h2{
+
+    font-size:35px;
+
+    color:#0b3d91;
+
+}
+
+
+.card p{
+
+    color:#777;
+
+}
+
+
+
+/* Golden Button */
+
+
+.btn{
+
+    background:#d4af37;
+
+    color:#06295c;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+
+.logo-box{
+    text-align:center;
+    padding:20px 10px;
+    margin-bottom:20px;
+}
+
+
+.academy-logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50%;
+    background:white;
+    padding:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+.logo-box h3{
+    color:#d4af37;
+    font-size:20px;
+    margin-top:15px;
+    font-weight:600;
+}
+
+
+.logo-box small{
+    color:#ffffff;
+    opacity:0.8;
+}
+
+.dashboard-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.dashboard-card .icon{
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.student-card .icon{
+
+    background:#0d6efd;
+
+}
+
+.teacher-card .icon{
+
+    background:#198754;
+
+}
+
+.class-card .icon{
+
+    background:#ffc107;
+
+    color:#000;
+
+}
+
+.attendance-card .icon{
+
+    background:#dc3545;
+
+}
+
+.dashboard-card h3{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.dashboard-card p{
+
+    color:#777;
+
+    margin:0;
+
+}
