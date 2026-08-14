@@ -1,59 +1,169 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎓 The Glorify Academy Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A complete web-based **Academy Management System** developed using Laravel.
 
-## About Laravel
+The system provides separate dashboards for **Admin, Teachers, and Parents**, along with a modern public-facing academy website.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌐 Public Website
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The public website allows visitors to explore The Glorify Academy without logging in.
 
-## Learning Laravel
+### Website Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- Modern responsive homepage
+- Academy image slider
+- About Academy
+- Mission & Vision
+- Dynamic Classes section
+- Academy Gallery
+- Images and Videos
+- Contact Information
+- Social Media Links
+- Parent Registration
+- User Login
+- Mobile Responsive Design
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 👨‍💼 Admin Dashboard
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+The Admin has complete control over academy management.
 
-### Premium Partners
+### Admin Features
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Dashboard statistics
+- Student Management
+- Teacher Management
+- Parent Account Management
+- Class Management
+- Attendance Management
+- Results Management
+- Fee Structure Management
+- Fee Challan Management
+- Fee Payment Management
+- Receipt Management
+- Notice Management
+- Notice Image Upload
+- Student & Teacher Records
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 👨‍🏫 Teacher Dashboard
 
-## Code of Conduct
+Teachers have their own dedicated dashboard.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Teacher Features
 
-## Security Vulnerabilities
+- View assigned class
+- View students
+- Manage student attendance
+- Manage student results
+- Access relevant student information
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 👨‍👩‍👧 Parent Dashboard
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Parents can securely access information related to their child.
+
+### Parent Features
+
+- View child profile
+- View attendance
+- Attendance statistics
+- View results
+- View fee information
+- View fee challans
+- View payment information
+- View academy notices
+- View notice images
+
+---
+
+## 🔐 Parent Registration System
+
+Parent registration is protected.
+
+A random visitor cannot simply create a parent account.
+
+A parent can register only when the required student information already exists in the academy database and matches the registration requirements.
+
+This helps prevent unauthorized parent account creation.
+
+---
+
+## 📢 Notice Management
+
+Admins can:
+
+- Create notices
+- Edit notices
+- Delete notices
+- Upload notice images
+- Set publish dates
+- Activate or deactivate notices
+
+Active notices are available to parents through their dashboard.
+
+---
+
+## 📅 Attendance Management
+
+The system supports student attendance records including:
+
+- Present
+- Absent
+- Leave
+- Attendance percentage
+- Recent attendance history
+
+---
+
+## 💰 Fee Management
+
+The fee management system includes:
+
+- Fee structures
+- Student fee challans
+- Challan items
+- Due dates
+- Late fines
+- Paid amounts
+- Payment status
+- Fee payments
+- Payment methods
+- Receipt numbers
+
+---
+
+## 📊 Result Management
+
+Student academic results can be managed and viewed through the appropriate dashboards.
+
+---
+
+## 🛠️ Technologies Used
+
+- PHP 8.2+
+- Laravel 12
+- MySQL
+- Blade Templates
+- HTML5
+- CSS3
+- JavaScript
+- Tailwind CSS
+- Font Awesome
+- Vite
+- Git
+- GitHub
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/SaimaRind9/glorify-academy.git
