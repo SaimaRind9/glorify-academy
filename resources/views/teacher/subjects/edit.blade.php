@@ -133,7 +133,7 @@
                         </div>
 
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
 
                             <label>
                                 Subject Type
@@ -159,7 +159,7 @@
 
                             </select>
 
-                        </div>
+                        </div> -->
 
 
                         <div class="form-group">

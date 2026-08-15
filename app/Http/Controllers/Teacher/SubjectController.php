@@ -101,15 +101,6 @@ class SubjectController extends Controller
                 'max:1000',
             ],
 
-            'subject_type' => [
-                'required',
-                Rule::in([
-                    'Theory',
-                    'Practical',
-                    'Activity',
-                ]),
-            ],
-
             'full_marks' => [
                 'required',
                 'numeric',
@@ -175,8 +166,13 @@ class SubjectController extends Controller
                 'subject_id' =>
                     $subject->id,
 
+                /*
+                | Temporary safe value.
+                | Current database enum accepts:
+                | Marks, Grade, Activity
+                */
                 'subject_type' =>
-                    $validated['subject_type'],
+                    'Marks',
 
                 'full_marks' =>
                     $validated['full_marks'],
@@ -294,15 +290,6 @@ class SubjectController extends Controller
                 'max:1000',
             ],
 
-            'subject_type' => [
-                'required',
-                Rule::in([
-                    'Theory',
-                    'Practical',
-                    'Activity',
-                ]),
-            ],
-
             'full_marks' => [
                 'required',
                 'numeric',
@@ -320,6 +307,12 @@ class SubjectController extends Controller
                 'required',
                 'boolean',
             ],
+        ], [
+            'subject_code.unique' =>
+                'This subject/course code already exists.',
+
+            'pass_marks.lte' =>
+                'Pass marks cannot be greater than full marks.',
         ]);
 
 
@@ -347,8 +340,11 @@ class SubjectController extends Controller
 
 
             $classSubject->update([
+                /*
+                | Keep the current DB-compatible value.
+                */
                 'subject_type' =>
-                    $validated['subject_type'],
+                    'Marks',
 
                 'full_marks' =>
                     $validated['full_marks'],
